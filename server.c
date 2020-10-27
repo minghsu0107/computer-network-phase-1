@@ -96,7 +96,7 @@ void output_static_file(int sockfd, const char *curdir, const char *path) {
 	strcat(fullpath, path);
 	FILE *f = fopen(fullpath, "r");
 	if (!f) {
-		perror("Problem with fopen");
+		fprintf(stderr, "resource not found: %s\n", path);
 		http_404_reply(sockfd);
 	}
 	else {
