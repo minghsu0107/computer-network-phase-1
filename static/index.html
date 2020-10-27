@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+	<div id="app">
+		<v-app>
+			<v-main>
+				<v-container fluid fill-height>
+					<v-layout align-center justify-center>
+						<v-card class="mx-auto" max-width="600" tile>
+							<v-img height="100%" src="https://ntusa.ntu.edu.tw/wp-content/uploads/2020/10/image-2.jpg">
+								<v-row>
+									<v-col class="pa-0" cols="5">
+										<v-avatar class="profile" color="grey" size="164" tile>
+											<v-img
+												src="https://media-exp1.licdn.com/dms/image/C5103AQFFi4MN5poHQQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=MJgNkkN978CDWyS9_fTvKtl9-XbMSNlP_MujMl3lbYA">
+											</v-img>
+										</v-avatar>
+									</v-col>
+									<v-col class="ma-4" col="7">
+										<v-list-item color="rgba(0, 0, 0, .4)" dark>
+											<v-list-item-content>
+												<v-list-item-title class="display-1">
+													許浩鳴
+												</v-list-item-title>
+												<v-list-item-subtitle class="title">Hao-Ming, Hsu</v-list-item-subtitle>
+												<v-list-item-subtitle>B07902053</v-list-item-subtitle>
+												<v-list-item-subtitle>(+886) 938913915</v-list-item-subtitle>
+												<v-list-item-subtitle>minghsu0107@gmail.com</v-list-item-subtitle>
+											</v-list-item-content>
+										</v-list-item>
+									</v-col>
+								</v-row>
+								<v-row>
+									<v-col class="ml-12" col="4">
+										<v-list-item color="rgba(0, 0, 0, .4)" dark>
+											<v-list-item-content>
+												<v-list-item-title class="title">
+													休閒娛樂
+												</v-list-item-title>
+												<v-list-item-subtitle class="ma-1">- 吃飯</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 喝水</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 看電影</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 聽音樂</v-list-item-subtitle>
+											</v-list-item-content>
+										</v-list-item>
+									</v-col>
+									<v-col col="4">
+										<v-list-item color="rgba(0, 0, 0, .4)" dark>
+											<v-list-item-content>
+												<v-list-item-title class="title">
+													擅長技能
+												</v-list-item-title>
+												<v-list-item-subtitle class="ma-1">- Debug</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 思考</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 做夢</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 趕死線</v-list-item-subtitle>
+											</v-list-item-content>
+										</v-list-item>
+									</v-col>
+									<v-col col="4">
+										<v-list-item color="rgba(0, 0, 0, .4)" dark>
+											<v-list-item-content>
+												<v-list-item-title class="title">
+													我的座右銘
+												</v-list-item-title>
+												<v-list-item-subtitle class="ma-1">- 公館遊樂園</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 料理非難事</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 人人有功練</v-list-item-subtitle>
+												<v-list-item-subtitle class="ma-1">- 像極了愛情</v-list-item-subtitle>
+											</v-list-item-content>
+										</v-list-item>
+									</v-col>
+								</v-row>
+							</v-img>
+						</v-card>
+					</v-layout>
+				</v-container>
+			</v-main>
+		</v-app>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			vuetify: new Vuetify(),
+		})
+	</script>
+</body>
+
+</html>
