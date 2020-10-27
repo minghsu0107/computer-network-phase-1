@@ -120,6 +120,8 @@ void handle_socket_thread(void *sockfd_arg) {
 
 		if (strcmp(path, "/") == 0) {
 			output_static_file(sockfd, curdir, INDEX_PAGE);
+		} else if (strcmp(path, "/hello") == 0) {
+			http_get_reply(sockfd, "hello");
 		} else {
 			output_static_file(sockfd, curdir, path);
 		}
