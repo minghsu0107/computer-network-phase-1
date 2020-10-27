@@ -29,7 +29,7 @@ void write_content_to_socket(int sockfd, const char *content) {
 
 	char *content_length_str = concat("Content-Length: ", length_str);
 	writeln_to_socket(sockfd, "Server: PetkoWS/1.0 (MacOS)");
-	//writeln_to_socket(sockfd, "Content-Type: text/html");
+	writeln_to_socket(sockfd, "Content-Type: text/html");
 	writeln_to_socket(sockfd, content_length_str);
 	writeln_to_socket(sockfd, "");
 	writeln_to_socket(sockfd, content);
